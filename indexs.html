@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>4択問題アプリ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-question">
+            <h2 id="main-question-text">正しいものはどれか？</h2>
+        </div>
+        <div class="question">
+            <h2 id="question-text">宅建建物取引業者A社はその主たる事務所に従事する唯一の専任の建物取引士が退職した時は[...]日以内に、新たな専任の宅地建物取引士を設置しなければならない。</h2>
+        </div>
+        <div class="choices">
+            <button class="choice" onclick="checkAnswer(1)">1週間</button>
+            <button class="choice" onclick="checkAnswer(2)">2週間</button>
+            <button class="choice" onclick="checkAnswer(3)">1ヶ月</button>
+            <button class="choice" onclick="checkAnswer(4)">3ヶ月</button>
+        </div>
+        <div class="answer-explanation" id="answer-explanation">
+            <p id="answer-status"></p>
+            <p id="explanation-text"></p>
+            <button id="next-button" class="next-button" onclick="nextQuestion()">次の問題へ</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
